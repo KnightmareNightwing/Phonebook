@@ -147,7 +147,7 @@ app.post('/api/persons', (request, response, next) => {
           response.json(result)
       })
       .catch(error => {
-        console.log(error.response.data.error)
+        console.log(error)
         next(error)      
       })
 })
